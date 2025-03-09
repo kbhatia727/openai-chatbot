@@ -1,24 +1,8 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a Ruby on Rails project that integrates the OpenAI API to create a chatbot application. The OpenAI API integration is set up, but asynchronous processing using ActiveJob will be added in the future for handling API requests in the background. The user interface and styling will also be developed in later stages of the project.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Features
+Integration with OpenAI's GPT-3 (or other models).
+Future Development: Asynchronous processing using ActiveJob to handle OpenAI API requests in the background.
+Future UI and styling: The frontend and design will be added later.
