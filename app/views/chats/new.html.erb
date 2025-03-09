@@ -1,0 +1,11 @@
+<h1>Start a New Chat</h1>
+
+<%= form_with model: @chat, local: true do |form| %>
+  <div>
+    <%= form.label :title, 'Chat Title' %>
+    <%= form.text_field :title %>
+  </div>
+  <div>
+    <%= form.submit 'Start Chat' %>
+  </div>
+<% end %>

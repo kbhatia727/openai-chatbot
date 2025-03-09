@@ -1,0 +1,8 @@
+<h2>Messages</h2>
+<ul>
+  <% @messages.each do |message| %>
+    <li>
+      <span><strong><%= message.role == 'user' ? 'You' : 'Bot' %>:</strong> <%= message.content %></span>
+    </li>
+  <% end %>
+</ul>

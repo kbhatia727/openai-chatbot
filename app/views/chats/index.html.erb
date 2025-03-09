@@ -1,0 +1,14 @@
+<h1>Chats</h1>
+<ul>
+  <% @chats.each do |chat| %>
+    <li>
+      <%= link_to chat.title, chat_path(chat) %>
+      <%= form_with model: chat, method: :delete, local: true, html: { style: "display: inline;" } do |form| %>
+        <%= form.submit 'Delete', class: 'btn btn-danger' %>
+      <% end %>
+    </li>
+  <% end %>
+</ul>
+
+<%= link_to "Start New Chat", new_chat_path %>
+

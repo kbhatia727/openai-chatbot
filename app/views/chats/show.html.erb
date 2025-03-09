@@ -1,0 +1,10 @@
+<h1><%= @chat.title %></h1>
+<%= link_to 'Back to Chats', chats_path, class: 'btn btn-primary' %>
+
+<br/><br/>
+
+<%= render 'messages/form' %>
+
+<hr>
+
+<%= render 'messages/message' %>
